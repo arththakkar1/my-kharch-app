@@ -1,21 +1,29 @@
 {
   "expo": {
-    "name": "money-manage-app",
+    "name": "MyKharch",
     "slug": "money-manage-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
+    "backgroundColor":"000000",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mykharch.app",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#000000",
+        "adaptiveIcon":"./assets/images/icon.png",
+        "icon":"./assets/images/icon.png"
+      },
+      "package": "com.mykharch.app"
     },
     "web": {
       "bundler": "metro",
@@ -30,12 +38,20 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#000000"
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "def0f27b-1cad-4437-a49f-4f0482820418"
+      }
     }
   }
 }
