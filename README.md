@@ -7,12 +7,10 @@
 - React Native (Expo)
 - TypeScript
 - Tailwind CSS
-- Clerk (Auth)
 - Appwrite (Backend)
 
 ## ✨ Features
 
-- 🔐 User authentication with Clerk
 - 📊 Add, view, and delete transactions
 - 📅 Filter and paginate by date
 - 💡 Real-time sync with Appwrite
